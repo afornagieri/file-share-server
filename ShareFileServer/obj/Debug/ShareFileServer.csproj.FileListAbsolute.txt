@@ -1,0 +1,10 @@
+C:\Users\artur\Desktop\Projects C,C++,C#\file-share-server\ShareFileServer\bin\Debug\ShareFileServer.exe.config
+C:\Users\artur\Desktop\Projects C,C++,C#\file-share-server\ShareFileServer\bin\Debug\ShareFileServer.exe
+C:\Users\artur\Desktop\Projects C,C++,C#\file-share-server\ShareFileServer\bin\Debug\ShareFileServer.pdb
+C:\Users\artur\Desktop\Projects C,C++,C#\file-share-server\ShareFileServer\obj\Debug\ShareFileServer.csproj.AssemblyReference.cache
+C:\Users\artur\Desktop\Projects C,C++,C#\file-share-server\ShareFileServer\obj\Debug\ShareFileServer.Form1.resources
+C:\Users\artur\Desktop\Projects C,C++,C#\file-share-server\ShareFileServer\obj\Debug\ShareFileServer.Properties.Resources.resources
+C:\Users\artur\Desktop\Projects C,C++,C#\file-share-server\ShareFileServer\obj\Debug\ShareFileServer.csproj.GenerateResource.cache
+C:\Users\artur\Desktop\Projects C,C++,C#\file-share-server\ShareFileServer\obj\Debug\ShareFileServer.csproj.CoreCompileInputs.cache
+C:\Users\artur\Desktop\Projects C,C++,C#\file-share-server\ShareFileServer\obj\Debug\ShareFileServer.exe
+C:\Users\artur\Desktop\Projects C,C++,C#\file-share-server\ShareFileServer\obj\Debug\ShareFileServer.pdb
