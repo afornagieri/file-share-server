@@ -30,18 +30,23 @@ namespace ShareFileServer
             }
             catch (Exception ex)
             {
-                listOfMessages.Invoke(new Action(() => listOfMessages.Items.Add("Error while trying to initiate the server: \n" + ex)));
-                listOfMessages.SetSelected(listOfMessages.Items.Count - 1, true);
+                listOfMessages.Invoke(new Action(() => {
+                    listOfMessages.Items.Add("Error while trying to initiate the server: \n" + ex.Message);
+                    listOfMessages.SetSelected(listOfMessages.Items.Count - 1, true);
+                }));
+
                 return;
             }
 
             try
             {
-                server.Listen(100);
+                server.Listen(port);
 
-                listOfMessages.Invoke(new Action(() => listOfMessages.Items.Add("Server ready to receive files !")));
-                listOfMessages.SetSelected(listOfMessages.Items.Count - 1, true);
-
+                listOfMessages.Invoke(new Action(() => {
+                    listOfMessages.Items.Add("Server ready to receive files !");
+                    listOfMessages.SetSelected(listOfMessages.Items.Count - 1, true);
+                }));
+                
                 Socket client = server.Accept();
                 client.ReceiveBufferSize = 16384;
 
@@ -76,7 +81,7 @@ namespace ShareFileServer
             }
             catch (SocketException ex)
             {
-                listOfMessages.Invoke(new Action(() => listOfMessages.Items.Add($"Error while receiving a file: " + ex)));
+                listOfMessages.Invoke(new Action(() => listOfMessages.Items.Add($"Error while receiving a file: " + ex.Message)));
                 listOfMessages.SetSelected(listOfMessages.Items.Count - 1, true);
             }
             finally
