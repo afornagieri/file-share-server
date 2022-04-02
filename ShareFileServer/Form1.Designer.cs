@@ -61,9 +61,24 @@ namespace ShareFileServer
             // 
             this.txtPort.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPort.Location = new System.Drawing.Point(378, 103);
+            this.txtPort.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.txtPort.Minimum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.txtPort.Name = "txtPort";
             this.txtPort.Size = new System.Drawing.Size(94, 31);
             this.txtPort.TabIndex = 2;
+            this.txtPort.Value = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             // 
             // btnConnect
             // 

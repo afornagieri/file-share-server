@@ -1,0 +1,10 @@
+C:\Users\artur\Desktop\Projects C,C++,C#\file-share-server\ClientFileServer\bin\Debug\ClientFileServer.exe.config
+C:\Users\artur\Desktop\Projects C,C++,C#\file-share-server\ClientFileServer\bin\Debug\ClientFileServer.exe
+C:\Users\artur\Desktop\Projects C,C++,C#\file-share-server\ClientFileServer\bin\Debug\ClientFileServer.pdb
+C:\Users\artur\Desktop\Projects C,C++,C#\file-share-server\ClientFileServer\obj\Debug\ClientFileServer.csproj.AssemblyReference.cache
+C:\Users\artur\Desktop\Projects C,C++,C#\file-share-server\ClientFileServer\obj\Debug\ClientFileServer.Form1.resources
+C:\Users\artur\Desktop\Projects C,C++,C#\file-share-server\ClientFileServer\obj\Debug\ClientFileServer.Properties.Resources.resources
+C:\Users\artur\Desktop\Projects C,C++,C#\file-share-server\ClientFileServer\obj\Debug\ClientFileServer.csproj.GenerateResource.cache
+C:\Users\artur\Desktop\Projects C,C++,C#\file-share-server\ClientFileServer\obj\Debug\ClientFileServer.csproj.CoreCompileInputs.cache
+C:\Users\artur\Desktop\Projects C,C++,C#\file-share-server\ClientFileServer\obj\Debug\ClientFileServer.exe
+C:\Users\artur\Desktop\Projects C,C++,C#\file-share-server\ClientFileServer\obj\Debug\ClientFileServer.pdb

@@ -14,7 +14,6 @@ namespace ShareFileServer
     {
         static IPEndPoint endpoint;
         static Socket server;
-        
         public static string localhost = "127.0.0.1";
         public static int port = 1000;
         public static string destinationFolder = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\";
@@ -40,8 +39,7 @@ namespace ShareFileServer
 
             try
             {
-                server.Listen(port);
-
+                server.Listen(100);
                 listOfMessages.Invoke(new Action(() => {
                     listOfMessages.Items.Add("Server ready to receive files !");
                     listOfMessages.SetSelected(listOfMessages.Items.Count - 1, true);
@@ -51,6 +49,7 @@ namespace ShareFileServer
                 client.ReceiveBufferSize = 16384;
 
                 byte[] data = new byte[1024 * 50000];
+
                 int lengthOfReceivedBytes = client.Receive(data, data.Length, 0);
                 int fileNameLength = BitConverter.ToInt32(data, 0);
                 string fileName = Encoding.UTF8.GetString(data, 4, fileNameLength);
@@ -71,8 +70,10 @@ namespace ShareFileServer
                         writer.Write(data, 0, lengthOfReceivedBytes);
                     }
 
-                    listOfMessages.Invoke(new Action(() => listOfMessages.Items.Add($"File received {fileName}\n")));
-                    listOfMessages.SetSelected(listOfMessages.Items.Count - 1, true);
+                    listOfMessages.Invoke(new Action(() => {
+                        listOfMessages.Items.Add($"File received {fileName}\n");
+                        listOfMessages.SetSelected(listOfMessages.Items.Count - 1, true);
+                    }));
 
                     writer.Close();
                     client.Close();
@@ -81,8 +82,10 @@ namespace ShareFileServer
             }
             catch (SocketException ex)
             {
-                listOfMessages.Invoke(new Action(() => listOfMessages.Items.Add($"Error while receiving a file: " + ex.Message)));
-                listOfMessages.SetSelected(listOfMessages.Items.Count - 1, true);
+                listOfMessages.Invoke(new Action(() => {
+                    listOfMessages.Items.Add($"Error while receiving a file: " + ex.Message);
+                    listOfMessages.SetSelected(listOfMessages.Items.Count - 1, true);
+                }));
             }
             finally
             {
